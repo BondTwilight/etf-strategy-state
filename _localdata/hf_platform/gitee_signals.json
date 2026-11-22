@@ -1,0 +1,791 @@
+{
+ "zz2000_k_1455_5min_202455": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:39",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "zz2000_k"
+    ],
+    "prefix": "zz2000_k_1455_5min_134940",
+    "intraday": "1455"
+   },
+   "calibers": [
+    {
+     "short": "zz2000_k_1455",
+     "prefix": "zz2000_k_dt",
+     "label": "复刻口径 zz2000_k (单腿 159552 + 备选 515020 空仓全仓轮动 · 10日V2 0.35~2.7 · 无MA过滤 · 最小持有5天 · 无止损 · 14:30 盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "515020",
+     "target_name": "",
+     "first_score": null,
+     "holding": "515020",
+     "held_days": null,
+     "ideal": "515020",
+     "decide": "维持 515020(目标即持仓)",
+     "blocked": false,
+     "action": "维持 华夏中证银行ETF 515020",
+     "grade": "稳",
+     "stability": "稳(295%)",
+     "stability_full": "**稳**（空仓信号：第一名 159552 第一=-0.6836 低于下限 0.35，需上涨 295.3% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--drop-stop",
+     "0.05",
+     "--sl-cooldown",
+     "0",
+     "--price-ma-n",
+     "10",
+     "--idle-leg",
+     "515020",
+     "--limit-up-block",
+     "--limit-down-block",
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 0.92,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 0.8s（1口径执行 0.1s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 zz2000_k 口径，组合层与其余口径均未跑）\n**技能耗时**：0.9s（预览子进程 0.9s + 解析排版 0.00s，未推文档）\n结论一句话：zz2000_k 维持 515020（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:39",
+  "updated_at": "2026-11-21 20:01:39"
+ },
+ "combo003_121834_dt": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:16",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 2,
+   "product": {
+    "calibers": [
+     "zz2000_k",
+     "etf9_timing"
+    ],
+    "legs": [
+     {
+      "caliber": "zz2000_k",
+      "hhmm": "1455",
+      "prefix": "combo_20261121_134937_L1_dt"
+     },
+     {
+      "caliber": "etf9_timing",
+      "hhmm": "1450",
+      "prefix": "combo_20261121_134937_L2_dt"
+     }
+    ],
+    "prefix": null,
+    "intraday": null
+   },
+   "calibers": [
+    {
+     "short": "zz2000_k_1455",
+     "prefix": "zz2000_k_dt",
+     "label": "复刻口径 zz2000_k (单腿 159552 + 备选 515020 空仓全仓轮动 · 10日V2 0.35~2.7 · 无MA过滤 · 最小持有5天 · 无止损 · 14:30 盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "515020",
+     "target_name": "",
+     "first_score": null,
+     "holding": "515020",
+     "held_days": null,
+     "ideal": "515020",
+     "decide": "维持 515020(目标即持仓)",
+     "blocked": false,
+     "action": "维持 华夏中证银行ETF 515020",
+     "grade": "稳",
+     "stability": "稳(295%)",
+     "stability_full": "**稳**（空仓信号：第一名 159552 第一=-0.6836 低于下限 0.35，需上涨 295.3% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    },
+    {
+     "short": "etf9_timing_1450",
+     "prefix": "etf9_timing_1430_dt",
+     "label": "复刻口径 etf9_timing (9腿 25/15日V1双加权斜率 · 510300大盘择时 · 14:50盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "空仓/无候选",
+     "target_name": "",
+     "first_score": null,
+     "holding": "空仓/现金",
+     "held_days": null,
+     "ideal": "空仓/无候选",
+     "decide": "维持 空仓/现金(目标即持仓)",
+     "blocked": false,
+     "action": "维持 空仓/现金",
+     "grade": "稳",
+     "stability": "稳(484%)",
+     "stability_full": "**稳**（空仓信号：第一名 159995 第一=-0.0767 低于下限 0.02，需上涨 483.5% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [],
+    "applied": false,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.67,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，2 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 1.5s（2口径执行 0.7s，新浪行情 0.2s）。（双轨 profile·产品单独预览：本次只跑该产品的 zz2000_k@14:55、etf9_timing@14:50 口径，组合层与其余口径均未跑）\n**技能耗时**：1.7s（预览子进程 1.7s + 解析排版 0.00s，未推文档）\n结论一句话：zz2000_k 维持 515020（稳），etf9_timing 维持 空仓/现金（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:16",
+  "updated_at": "2026-11-21 20:01:17"
+ },
+ "combo_20261109_144254_145258_dt": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:23",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 2,
+   "product": {
+    "calibers": [
+     "pf2",
+     "mr_1430"
+    ],
+    "legs": [
+     {
+      "caliber": "pf2",
+      "hhmm": "1445",
+      "prefix": "combo_20261121_134951_L1_dt"
+     },
+     {
+      "caliber": "mr_1430",
+      "hhmm": "1430",
+      "prefix": "combo_20261121_134951_L2_dt"
+     }
+    ],
+    "prefix": null,
+    "intraday": null
+   },
+   "calibers": [
+    {
+     "short": "pf2_1445",
+     "prefix": "cifang_20leg_v1_tp12sl5_pf2_dt",
+     "label": "口径一 cifang_20leg_v1_tp12sl5_pf2（20腿 单动量+风控）",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "162415",
+     "target_name": "美国消费LOF",
+     "first_score": "0.3151",
+     "holding": "162415",
+     "held_days": 2,
+     "ideal": "162415",
+     "decide": "风控平仓 卖 513030 德国ETF → 买 162415 美国消费LOF",
+     "blocked": false,
+     "action": "维持 美国消费LOF 162415",
+     "grade": "稳",
+     "stability": "稳(64%)",
+     "stability_full": "**稳**（最紧：领先候补 513030 仅 64.2%；次紧：距下限 0.05 只有 84.1% 回落空间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    },
+    {
+     "short": "mr_1430",
+     "prefix": "cifang_mr_20_26_mh2_1430_dt",
+     "label": "口径六 cifang_mr_20_26_mh2_1430（12腿 双V2 14:30执行版）",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "513290",
+     "target_name": "纳指生物科技ETF",
+     "first_score": "0.0259",
+     "holding": "513290",
+     "held_days": 2,
+     "ideal": "513290",
+     "decide": "换仓: 卖出 513030 → 买入 513290 纳指生物科技ETF",
+     "blocked": false,
+     "action": "维持 纳指生物科技ETF 513290",
+     "grade": "偏稳",
+     "stability": "偏稳(23%)",
+     "stability_full": "**偏稳**（最紧：领先候补 513030 仅 22.8%；次紧：距下限 0.0 只有 100.0% 回落空间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [],
+    "applied": false,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 2.09,
+    "parse": 0.0,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，2 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 2.0s（2口径执行 1.3s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 pf2@14:45、mr_1430@14:30 口径，组合层与其余口径均未跑）\n**技能耗时**：2.1s（预览子进程 2.1s + 解析排版 0.00s，未推文档）\n结论一句话：pf2 维持 162415（稳），mr_1430 维持 513290（偏稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:23",
+  "updated_at": "2026-11-21 20:01:24"
+ },
+ "etf6_cross_1440_5min_130821": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:29",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "etf6_cross"
+    ],
+    "prefix": "etf6_cross_1440_5min_134931",
+    "intraday": "1440"
+   },
+   "calibers": [
+    {
+     "short": "etf6_cross_1440",
+     "prefix": "etf6_cross_1430_dt",
+     "label": "复刻口径 etf6_cross (6腿 25日V1加权斜率 0~3 · MA10>MA20多头排列 · 回撤止损5%冷却5 · 14:50盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "513030",
+     "target_name": "德国ETF",
+     "first_score": "0.1066",
+     "holding": "空仓/现金",
+     "held_days": null,
+     "ideal": "513030",
+     "decide": "维持 空仓/现金(目标即持仓)",
+     "blocked": false,
+     "action": "维持 空仓/现金",
+     "grade": "稳",
+     "stability": "稳(100%)",
+     "stability_full": "**稳**（最紧：距下限 0.0 只有 100.0% 回落空间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--trail-stop",
+     "0.05",
+     "--sl-cooldown",
+     "5",
+     "--premium-max",
+     "0.201",
+     "--leg-risk-cooldown",
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.15,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 1.0s（1口径执行 0.4s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 etf6_cross 口径，组合层与其余口径均未跑）\n**技能耗时**：1.1s（预览子进程 1.1s + 解析排版 0.00s，未推文档）\n结论一句话：etf6_cross 维持 空仓/现金（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:29",
+  "updated_at": "2026-11-21 20:01:29"
+ },
+ "etf9_timing_1420_5min_232720": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:32",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "etf9_timing"
+    ],
+    "prefix": "etf9_timing_1420_5min_134948",
+    "intraday": "1420"
+   },
+   "calibers": [
+    {
+     "short": "etf9_timing_1420",
+     "prefix": "etf9_timing_1430_dt",
+     "label": "复刻口径 etf9_timing (9腿 25/15日V1双加权斜率 · 510300大盘择时 · 14:50盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "空仓/无候选",
+     "target_name": "",
+     "first_score": null,
+     "holding": "空仓/现金",
+     "held_days": null,
+     "ideal": "空仓/无候选",
+     "decide": "维持 空仓/现金(目标即持仓)",
+     "blocked": false,
+     "action": "维持 空仓/现金",
+     "grade": "稳",
+     "stability": "稳(516%)",
+     "stability_full": "**稳**（空仓信号：第一名 159995 第一=-0.0832 低于下限 0.02，需上涨 516.0% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--timing-leg",
+     "510300",
+     "--limit-up-block",
+     "--limit-down-block",
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.26,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 1.1s（1口径执行 0.5s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 etf9_timing 口径，组合层与其余口径均未跑）\n**技能耗时**：1.3s（预览子进程 1.3s + 解析排版 0.00s，未推文档）\n结论一句话：etf9_timing 维持 空仓/现金（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:32",
+  "updated_at": "2026-11-21 20:01:32"
+ },
+ "hf_etf_12_1030_5min_mix_215232_mix": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:34",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "hf_etf_12"
+    ],
+    "prefix": "hf_etf_12_1030_5min_mix_134928_mix",
+    "intraday": "1030"
+   },
+   "calibers": [
+    {
+     "short": "hf_etf_12_1030",
+     "prefix": "hf_etf_12_dt",
+     "label": "复刻口径 hf_etf_12 (12腿 2日区间涨幅 0.1%~30% · 10:30 盘中执行)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "159941",
+     "target_name": "纳指ETF(广发)",
+     "first_score": "11.1448",
+     "holding": "159941",
+     "held_days": 1,
+     "ideal": "159941",
+     "decide": "换仓: 卖出 512480 → 买入 159941 纳指ETF(广发)",
+     "blocked": false,
+     "action": "维持 纳指ETF(广发) 159941",
+     "grade": "易翻转",
+     "stability": "易翻转(-97%)",
+     "stability_full": "**易翻转**（最紧：距上限 0.3 只有 -97.3% 上升空间；次紧：领先候补 512480 仅 75.6%）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--idle-leg",
+     "511880",
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.36,
+    "parse": 0.0,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·混合动量源的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 1.2s（1口径执行 0.6s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 hf_etf_12 口径，组合层与其余口径均未跑）\n**技能耗时**：1.4s（预览子进程 1.4s + 解析排版 0.00s，未推文档）\n结论一句话：hf_etf_12 维持 159941（易翻转）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:34",
+  "updated_at": "2026-11-21 20:01:35"
+ },
+ "zz1k_mh15_1430_30min_mix_130501_mix": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:37",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "zz1k_mh15"
+    ],
+    "prefix": "zz1k_mh15_1430_30min_mix_134921_mix",
+    "intraday": "1430"
+   },
+   "calibers": [
+    {
+     "short": "zz1k_mh15_1430",
+     "prefix": "zz1k_mh15_dt",
+     "label": "复刻口径 zz1k_mh15 (单腿 512100 + 备选 515020 · 30日V2 0.35~2.7 + 30日RSRS裸z (0,5)含今日 · 最小持有15天 · 无止损 · 14:30盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "515020",
+     "target_name": "",
+     "first_score": null,
+     "holding": "515020",
+     "held_days": null,
+     "ideal": "515020",
+     "decide": "维持 515020(目标即持仓)",
+     "blocked": false,
+     "action": "维持 华夏中证银行ETF 515020",
+     "grade": "稳",
+     "stability": "稳(206%)",
+     "stability_full": "**稳**（空仓信号：第一名 512100 第一=-0.3699 低于下限 0.35，需上涨 205.7% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--idle-leg",
+     "515020",
+     "--limit-up-block",
+     "--limit-down-block",
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 0.96,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·混合动量源的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 0.8s（1口径执行 0.2s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 zz1k_mh15 口径，组合层与其余口径均未跑）\n**技能耗时**：1.0s（预览子进程 1.0s + 解析排版 0.00s，未推文档）\n结论一句话：zz1k_mh15 维持 515020（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:37",
+  "updated_at": "2026-11-21 20:01:37"
+ },
+ "combo004_173232_mix": {
+  "payload": {
+   "generated_at": "2026-11-21 20:11:46",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 2,
+   "product": {
+    "calibers": [
+     "etf9_timing",
+     "zz1k_mh15"
+    ],
+    "legs": [
+     {
+      "caliber": "etf9_timing",
+      "hhmm": "1450",
+      "prefix": "combo004_173232_L1_mix"
+     },
+     {
+      "caliber": "zz1k_mh15",
+      "hhmm": "1430",
+      "prefix": "combo004_173232_L2_mix"
+     }
+    ],
+    "prefix": null,
+    "intraday": null
+   },
+   "calibers": [
+    {
+     "short": "etf9_timing_1450",
+     "prefix": "etf9_timing_1430_dt",
+     "label": "复刻口径 etf9_timing (9腿 25/15日V1双加权斜率 · 510300大盘择时 · 14:50盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "空仓/无候选",
+     "target_name": "",
+     "first_score": null,
+     "holding": "空仓/现金",
+     "held_days": null,
+     "ideal": "空仓/无候选",
+     "decide": "维持 空仓/现金(目标即持仓)",
+     "blocked": false,
+     "action": "维持 空仓/现金",
+     "grade": "稳",
+     "stability": "稳(420%)",
+     "stability_full": "**稳**（空仓信号：第一名 159995 第一=-0.0641 低于下限 0.02，需上涨 420.5% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    },
+    {
+     "short": "zz1k_mh15_1430",
+     "prefix": "zz1k_mh15_dt",
+     "label": "复刻口径 zz1k_mh15 (单腿 512100 + 备选 515020 · 30日V2 0.35~2.7 + 30日RSRS裸z (0,5)含今日 · 最小持有15天 · 无止损 · 14:30盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "515020",
+     "target_name": "",
+     "first_score": null,
+     "holding": "515020",
+     "held_days": null,
+     "ideal": "515020",
+     "decide": "维持 515020(目标即持仓)",
+     "blocked": false,
+     "action": "维持 华夏中证银行ETF 515020",
+     "grade": "稳",
+     "stability": "稳(206%)",
+     "stability_full": "**稳**（空仓信号：第一名 512100 第一=-0.3699 低于下限 0.35，需上涨 205.7% 才进区间）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [],
+    "applied": false,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.51,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，2 个口径·混合动量源的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 1.4s（2口径执行 0.7s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 etf9_timing@14:50、zz1k_mh15@14:30 口径，组合层与其余口径均未跑）\n**技能耗时**：1.5s（预览子进程 1.5s + 解析排版 0.00s，未推文档）\n结论一句话：etf9_timing 维持 空仓/现金（稳），zz1k_mh15 维持 515020（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:11:46",
+  "updated_at": "2026-11-21 20:11:47"
+ },
+ "etf3_rsrs25_1435_5min_105417": {
+  "payload": {
+   "generated_at": "2026-11-21 20:01:26",
+   "profile": "dualtrack",
+   "data_root": "D:/data_ext",
+   "snapshot": null,
+   "trade_date": "2026-11-19",
+   "equity_end": "2026-11-19",
+   "partial": false,
+   "n_calibers": 1,
+   "product": {
+    "calibers": [
+     "etf3_rsrs25"
+    ],
+    "prefix": "etf3_rsrs25_1435_5min_134924",
+    "intraday": "1435"
+   },
+   "calibers": [
+    {
+     "short": "etf3_rsrs25_1435",
+     "prefix": "etf3_rsrs25_dt",
+     "label": "复刻口径 etf3_rsrs25 (3腿 159915/518880/513100 · 25日V2 0.05~5 + 25日RSRS裸z (0,5) · 不含今日 · 最小持有1天 · 无止盈止损 · 14:30盘中)",
+     "snapshot": null,
+     "trade_date": "2026-11-19",
+     "equity_end": "2026-11-19",
+     "target_code": "空仓/无候选",
+     "target_name": "",
+     "first_score": null,
+     "holding": "空仓/现金",
+     "held_days": null,
+     "ideal": "空仓/无候选",
+     "decide": "维持 空仓/现金(目标即持仓)",
+     "blocked": false,
+     "action": "维持 空仓/现金",
+     "grade": "稳",
+     "stability": "稳(537%)",
+     "stability_full": "**稳**（空仓信号：第一名 518880 第一=-0.2185 低于下限 0.05，需上涨 537.0% 才进区间；第二名 513100 第一=-0.3417）",
+     "parse_unmatched": false,
+     "liquidity": null
+    }
+   ],
+   "parse_warnings": [],
+   "risk": {
+    "flags": [
+     "--suspend-block-trade",
+     "--missing-as-suspend"
+    ],
+    "applied": true,
+    "skipped_reason": ""
+   },
+   "nav_stale": false,
+   "nav_stale_days": 0,
+   "blend": null,
+   "doc": {
+    "pushed": false,
+    "counts": {},
+    "skipped": true,
+    "skip_reason": "双轨 profile 隔离：不推单轨《信号预览》（防覆盖线上正文）",
+    "error": ""
+   },
+   "timings": {
+    "preview": 1.04,
+    "parse": 0.01,
+    "blend": 0.0,
+    "render": 0.0
+   },
+   "report": "脚本已跑完，1 个口径·双轨DT的结果如下（今日休市，按 2026-11-19 收盘口径）：\n\n数据状态：最新交易日 2026-11-19，回测产物末日 2026-11-19（与最新交易日一致）。总耗时 0.9s（1口径执行 0.3s，新浪行情 0.1s）。（双轨 profile·产品单独预览：本次只跑该产品的 etf3_rsrs25 口径，组合层与其余口径均未跑）\n**技能耗时**：1.0s（预览子进程 1.0s + 解析排版 0.00s，未推文档）\n结论一句话：etf3_rsrs25 维持 空仓/现金（稳）。终裁需 15:00 收盘后去掉 --live 重跑。",
+   "warnings": [],
+   "blend_signal": ""
+  },
+  "trade_date": "2026-11-19",
+  "generated_at": "2026-11-21 20:01:26",
+  "updated_at": "2026-11-21 20:01:26"
+ }
+}

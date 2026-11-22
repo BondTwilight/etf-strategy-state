@@ -1,0 +1,206 @@
+[
+ {
+  "file": "kce_v1.html",
+  "prefix": "kce_v1",
+  "label": "恒方量化精选-红利低波高胜率",
+  "rtype": "single",
+  "metrics": {
+   "total": "+284.77%",
+   "annual": "+18.81%",
+   "sharpe": "1.50",
+   "mdd": "-12.12%",
+   "calmar": "1.55"
+  },
+  "exported_at": "2026-11-22 19:13:25",
+  "build": 52,
+  "sig_key": "kce_v1",
+  "sig_hhmm": ""
+ },
+ {
+  "file": "dt_combo004_173232_mix.html",
+  "prefix": "dt_combo004_173232_mix",
+  "label": "恒方量化精选-低回撤V2·双引擎(回测7年)",
+  "rtype": "combo",
+  "metrics": {
+   "total": "+1,459.09%",
+   "annual": "+41.71%",
+   "sharpe": "2.28",
+   "mdd": "-12.19%",
+   "calmar": "3.42"
+  },
+  "exported_at": "2026-11-21 17:33:38",
+  "build": 52,
+  "sig_key": "combo004_173232_mix",
+  "sig_hhmm": "14:50"
+ },
+ {
+  "file": "dt_zz1k_mh15_1430_30min_mix_130501_mix.html",
+  "prefix": "dt_zz1k_mh15_1430_30min_mix_130501_mix",
+  "label": "恒方量化精选-中证1000跷跷板",
+  "rtype": "single",
+  "metrics": {
+   "total": "+462.41%",
+   "annual": "+24.51%",
+   "sharpe": "1.32",
+   "mdd": "-18.64%",
+   "calmar": "1.31"
+  },
+  "exported_at": "2026-11-21 13:49:25",
+  "build": 52,
+  "sig_key": "zz1k_mh15_1430_30min_mix_130501_mix",
+  "sig_hhmm": "14:30"
+ },
+ {
+  "file": "dt_etf3_rsrs25_1435_5min_105417.html",
+  "prefix": "dt_etf3_rsrs25_1435_5min_105417",
+  "label": "恒方量化精选-中美科技轮动黄金增强空仓防守策略",
+  "rtype": "single",
+  "metrics": {
+   "total": "+3,417.97%",
+   "annual": "+34.98%",
+   "sharpe": "1.76",
+   "mdd": "-14.11%",
+   "calmar": "2.48"
+  },
+  "exported_at": "2026-11-21 13:49:30",
+  "build": 52,
+  "sig_key": "etf3_rsrs25_1435_5min_105417",
+  "sig_hhmm": "14:35"
+ },
+ {
+  "file": "dt_hf_etf_12_1030_5min_mix_215232_mix.html",
+  "prefix": "dt_hf_etf_12_1030_5min_mix_215232_mix",
+  "label": "恒方量化精选-ETF轮动12标的",
+  "rtype": "single",
+  "metrics": {
+   "total": "+1,541.58%",
+   "annual": "+50.19%",
+   "sharpe": "1.32",
+   "mdd": "-35.32%",
+   "calmar": "1.42"
+  },
+  "exported_at": "2026-11-21 13:49:44",
+  "build": 52,
+  "sig_key": "hf_etf_12_1030_5min_mix_215232_mix",
+  "sig_hhmm": "10:30"
+ },
+ {
+  "file": "dt_etf6_cross_1440_5min_130821.html",
+  "prefix": "dt_etf6_cross_1440_5min_130821",
+  "label": "恒方量化精选-大类资产轮动",
+  "rtype": "single",
+  "metrics": {
+   "total": "+1,843.03%",
+   "annual": "+53.91%",
+   "sharpe": "1.81",
+   "mdd": "-15.91%",
+   "calmar": "3.39"
+  },
+  "exported_at": "2026-11-21 13:49:41",
+  "build": 52,
+  "sig_key": "etf6_cross_1440_5min_130821",
+  "sig_hhmm": "14:40"
+ },
+ {
+  "file": "f9_v21_sdb.html",
+  "prefix": "f9_v21_sdb",
+  "label": "恒方量化精选-沪深300个股轮动",
+  "rtype": "single",
+  "metrics": {
+   "total": "+360.83%",
+   "annual": "+13.75%",
+   "sharpe": "0.84",
+   "mdd": "-20.97%",
+   "calmar": "0.66"
+  },
+  "exported_at": "2026-11-21 13:51:26",
+  "build": 52,
+  "sig_key": "f9_v21_sdb",
+  "sig_hhmm": ""
+ },
+ {
+  "file": "dt_combo003_121834_dt.html",
+  "prefix": "dt_combo003_121834_dt",
+  "label": "恒方量化精选-低回撤王者·双引擎",
+  "rtype": "combo",
+  "metrics": {
+   "total": "+465.41%",
+   "annual": "+82.69%",
+   "sharpe": "3.26",
+   "mdd": "-7.77%",
+   "calmar": "10.65"
+  },
+  "exported_at": "2026-11-21 13:49:46",
+  "build": 52,
+  "sig_key": "combo003_121834_dt",
+  "sig_hhmm": "14:55"
+ },
+ {
+  "file": "dt_zz2000_k_1455_5min_202455.html",
+  "prefix": "dt_zz2000_k_1455_5min_202455",
+  "label": "恒方量化精选-跷跷板高收益",
+  "rtype": "single",
+  "metrics": {
+   "total": "+390.36%",
+   "annual": "+94.34%",
+   "sharpe": "3.41",
+   "mdd": "-8.65%",
+   "calmar": "10.90"
+  },
+  "exported_at": "2026-11-21 13:49:42",
+  "build": 52,
+  "sig_key": "zz2000_k_1455_5min_202455",
+  "sig_hhmm": "14:55"
+ },
+ {
+  "file": "dt_etf9_timing_1420_5min_232720.html",
+  "prefix": "dt_etf9_timing_1420_5min_232720",
+  "label": "恒方量化精选-五洲跨市场轮动",
+  "rtype": "single",
+  "metrics": {
+   "total": "+1,847.00%",
+   "annual": "+53.96%",
+   "sharpe": "1.99",
+   "mdd": "-13.82%",
+   "calmar": "3.90"
+  },
+  "exported_at": "2026-11-21 13:50:02",
+  "build": 52,
+  "sig_key": "etf9_timing_1420_5min_232720",
+  "sig_hhmm": "14:20"
+ },
+ {
+  "file": "dt_combo_20261109_144254_145258_dt.html",
+  "prefix": "dt_combo_20261109_144254_145258_dt",
+  "label": "恒方量化精选-牛气冲天V2",
+  "rtype": "combo",
+  "metrics": {
+   "total": "+10,959.48%",
+   "annual": "+40.39%",
+   "sharpe": "1.77",
+   "mdd": "-22.30%",
+   "calmar": "1.81"
+  },
+  "exported_at": "2026-11-21 13:50:17",
+  "build": 52,
+  "sig_key": "combo_20261109_144254_145258_dt",
+  "sig_hhmm": "14:45"
+ },
+ {
+  "file": "bank_v1_hfq.html",
+  "prefix": "bank_v1_hfq",
+  "label": "恒方量化精选-银行稳健增利",
+  "rtype": "single",
+  "metrics": {
+   "total": "+149.51%",
+   "annual": "+8.00%",
+   "sharpe": "0.77",
+   "mdd": "-11.78%",
+   "calmar": "0.68"
+  },
+  "exported_at": "2026-11-21 13:51:00",
+  "build": 52,
+  "sig_key": "bank_v1_hfq",
+  "sig_hhmm": ""
+ }
+]

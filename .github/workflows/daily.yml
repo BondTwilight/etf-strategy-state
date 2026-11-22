@@ -1,0 +1,103 @@
+name: daily-state
+
+# 每个交易日 15:10（北京时间）= 07:10 UTC 跑一次链路，产出 data/state.json 并提交。
+# 页面直连 raw.githubusercontent.com 拉这份文件 ⇒ 电脑关着也能看到当天数据。
+#
+# 注意：GitHub 的 schedule 不保证准点，通常延迟 3~20 分钟，极端情况会跳过某次。
+# 所以页面永远保留内嵌快照，Action 只是「有就更」。
+on:
+  schedule:
+    - cron: "10 7 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-state
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TZ: Asia/Shanghai
+      CIFANG_KEY: ${{ secrets.CIFANG_KEY }}
+      LIVE_STATE_OUT: ${{ github.workspace }}/data/state.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      # 行情库/分时库都是「重建式」，全量跑一次 3~6 分钟。
+      # 用 cache 把上一轮的 data/ 带过来，之后每天只补新增那一段。
+      - name: 恢复数据缓存
+        uses: actions/cache@v4
+        with:
+          path: etf_dip_signal/data
+          key: qdata-${{ github.run_id }}
+          restore-keys: qdata-
+
+      - name: 补 381 池 14:45 执行价库（线C 的真实口径）
+        # 没有这一步，线C 会退回收盘价：年化 35.24% vs 32.64%，差 2.6pp。
+        run: python etf_dip_signal/_build_pool1445.py
+        continue-on-error: true
+
+      - name: 补 21 只分时库（14:30 / 14:45 / 14:50）
+        # 平台的成交价是各策略自己的执行时点价，不是收盘价。
+        run: python etf_dip_signal/_build_intraday.py
+        continue-on-error: true
+
+      - name: 跑每日链路（行情库 → 模拟 → 持仓 → 账本 → 恒方 → 行业 → 看台 → 手机页）
+        run: python etf_dip_signal/daily_refresh.py --force
+
+      - name: AI 解读（没配 DEEPSEEK_KEY 就静默跳过）
+        env:
+          DEEPSEEK_KEY: ${{ secrets.DEEPSEEK_KEY }}
+        run: python tools/ai_note.py
+
+      - name: 检查产物
+        run: |
+          ls -lh data/state.json
+          python - <<'PY'
+          import json, sys, datetime
+          s = json.load(open("data/state.json", encoding="utf-8"))
+          print("built_at", s.get("built_at"), "data_date", s.get("data_date"))
+          print("持仓", len(s.get("items") or []),
+                "动作", len((s.get("action") or {}).get("items") or []))
+          if not s.get("data_date"):
+              sys.exit("state 缺 data_date")
+
+          # 账本新鲜度：_sim.py 是「非关键步」，失败时链会继续，用旧账本出页面。
+          # 这里拦住它 —— 宁可红叉，也不要静默提交一份过期评分。
+          sim = json.load(open("etf_dip_signal/data/_sim_out.json", encoding="utf-8"))
+          meta = sim.get("meta") or {}
+          built = meta.get("built") or ""
+          warn = meta.get("caliber_warn") or []
+          print("模拟构建", built, "｜口径提示", warn)
+          if built:
+              age = (datetime.datetime.now()
+                     - datetime.datetime.strptime(built, "%Y-%m-%d %H:%M")).days
+              print("账本距今 %d 天" % age)
+              if age > 2:
+                  sys.exit("账本 %d 天没更新（_sim.py 失败），拒绝提交" % age)
+          PY
+
+      - name: 提交 state.json
+        run: |
+          git config user.name  "quant-bot"
+          git config user.email "quant-bot@users.noreply.github.com"
+          git add data/state.json
+          if git diff --cached --quiet; then
+            echo "今天没有变化"
+          else
+            git commit -m "state: $(date +%F) $(date +%H:%M)"
+            git push
+          fi

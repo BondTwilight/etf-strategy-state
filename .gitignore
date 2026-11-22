@@ -1,0 +1,14 @@
+*.parquet
+*.part
+__pycache__/
+信号输出/
+_refresh_meta.json
+_pool1445_progress.json
+
+# 只允许「输入」；持仓/净值/账本产物一律不进仓库
+etf_dip_signal/data/*
+!etf_dip_signal/data/fixed_pool.json
+!etf_dip_signal/data/_robust.json
+!etf_dip_signal/data/_ms_probe.json
+!etf_dip_signal/data/intraday_meta.json
+!etf_dip_signal/data/config.json

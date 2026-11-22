@@ -1,0 +1,13 @@
+{
+ "fetched_at": "2026-11-22 11:23",
+ "signal_date": "2026-11-19",
+ "generated_at": "2026-11-21 20:11",
+ "data_date": "2026-11-20",
+ "lag_td": 1,
+ "n_keys": 9,
+ "n_products": 12,
+ "n_sig_products": 9,
+ "sig_ok": false,
+ "cat_ok": true,
+ "source": "缓存/实时"
+}
